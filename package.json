@@ -1,0 +1,36 @@
+{
+  "name": "engineering-brain-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate:brain-model": "node scripts/generate-brain-glb.mjs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@react-three/postprocessing": "^2.19.1",
+    "@react-three/drei": "^9.120.0",
+    "@react-three/fiber": "^8.17.14",
+    "d3": "^7.9.0",
+    "framer-motion": "^11.18.2",
+    "postprocessing": "^6.37.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.5"
+  }
+}

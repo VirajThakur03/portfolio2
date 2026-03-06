@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Neural Brain Core">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#b8ffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b6ff2b"/>
+      <stop offset="50%" stop-color="#5cff72"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="600" cy="450" rx="500" ry="320" fill="url(#bgGlow)"/>
+
+  <path d="M240,430 C220,290 310,190 430,180 C470,120 580,105 675,155 C790,165 915,240 930,360 C975,440 945,560 860,620 C830,705 720,760 620,740 C520,780 370,740 300,650 C240,610 205,530 240,430 Z"
+        fill="#06140c" stroke="url(#brain)" stroke-width="8"/>
+
+  <g stroke="#d8ffff" stroke-opacity="0.85" stroke-width="3" fill="none">
+    <path d="M300 340 L420 250 L560 280 L650 230 L780 300 L860 390 L820 510 L700 610 L560 650 L420 610 L330 520 Z"/>
+    <path d="M420 250 L420 610"/>
+    <path d="M560 280 L560 650"/>
+    <path d="M650 230 L700 610"/>
+    <path d="M330 520 L820 510"/>
+    <path d="M300 340 L700 610"/>
+    <path d="M420 250 L860 390"/>
+    <path d="M560 280 L860 390"/>
+  </g>
+
+  <g fill="#ffffff" filter="url(#soft)">
+    <circle cx="300" cy="340" r="8"/>
+    <circle cx="420" cy="250" r="8"/>
+    <circle cx="560" cy="280" r="8"/>
+    <circle cx="650" cy="230" r="8"/>
+    <circle cx="780" cy="300" r="8"/>
+    <circle cx="860" cy="390" r="8"/>
+    <circle cx="820" cy="510" r="8"/>
+    <circle cx="700" cy="610" r="8"/>
+    <circle cx="560" cy="650" r="8"/>
+    <circle cx="420" cy="610" r="8"/>
+    <circle cx="330" cy="520" r="8"/>
+  </g>
+
+  <g stroke="url(#brain)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M390 430 C430 380 470 380 510 430"/>
+    <path d="M530 500 C570 450 640 450 690 520"/>
+    <path d="M640 360 C690 330 760 345 790 390"/>
+  </g>
+</svg>

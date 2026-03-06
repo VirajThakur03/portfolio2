@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <rect width="1200" height="640" fill="#24072c"/>
+  <rect x="62" y="58" width="1076" height="524" rx="20" fill="#3a0f45" stroke="#ef7fff"/>
+  <text x="96" y="124" font-family="Arial" font-size="40" fill="#ffe6ff">Speech Emotion Feature Pipeline</text>
+  <text x="96" y="178" font-family="Arial" font-size="24" fill="#ffd1ff">Audio -> Noise Handling -> MFCC(40) -> Classifier</text>
+  <rect x="96" y="216" width="980" height="320" rx="12" fill="#2a0b33" stroke="#9a47a9"/>
+  <text x="132" y="286" font-family="Consolas" font-size="22" fill="#ffd9ff">mfcc = librosa.feature.mfcc(y=audio, sr=16000, n_mfcc=40)</text>
+  <text x="132" y="326" font-family="Consolas" font-size="22" fill="#ffd9ff">feature_vector = np.mean(mfcc.T, axis=0)</text>
+</svg>

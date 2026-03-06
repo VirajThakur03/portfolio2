@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+body {
+  @apply m-0 min-h-screen bg-slate-950 text-slate-100 font-rajdhani;
+  background-image:
+    linear-gradient(180deg, #020617 0%, #030712 35%, #030014 100%),
+    radial-gradient(circle at 20% 20%, rgba(0,229,255,0.14), transparent 36%),
+    radial-gradient(circle at 80% 30%, rgba(124,77,255,0.18), transparent 40%),
+    radial-gradient(circle at 45% 80%, rgba(24,255,255,0.12), transparent 32%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.hud-panel {
+  @apply rounded-xl border border-cyan-400/30 bg-slate-950/60 backdrop-blur-md;
+  box-shadow: 0 0 22px rgba(0, 229, 255, 0.25);
+}
+
+.scan-grid::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(0, 229, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 77, 255, 0.03) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black 50%, transparent 95%);
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(0, 229, 255, 0.4); border-radius: 999px; }
+
+.brain-hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.brain-hero::before,
+.brain-hero::after {
+  content: "";
+  position: absolute;
+  inset: -8% -5%;
+  border-radius: 2rem;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.brain-hero::before {
+  background:
+    radial-gradient(circle at 28% 38%, rgba(0, 229, 255, 0.2), transparent 44%),
+    radial-gradient(circle at 72% 42%, rgba(124, 77, 255, 0.24), transparent 48%),
+    radial-gradient(circle at 50% 72%, rgba(24, 255, 255, 0.18), transparent 42%);
+  filter: blur(30px);
+  animation: corticalPulse 7.2s ease-in-out infinite;
+}
+
+.brain-hero::after {
+  background-image:
+    radial-gradient(circle, rgba(140, 255, 248, 0.16) 0 1px, transparent 1px),
+    radial-gradient(circle, rgba(124, 77, 255, 0.14) 0 1px, transparent 1px);
+  background-size: 34px 34px, 48px 48px;
+  background-position: 0 0, 18px 14px;
+  opacity: 0.24;
+  mask-image: radial-gradient(circle at center, black 44%, transparent 90%);
+  animation: synapseDrift 22s linear infinite;
+}
+
+.brain-shell {
+  position: relative;
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.brain-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, transparent 12%, rgba(132, 249, 255, 0.16) 28%, transparent 43%),
+    linear-gradient(300deg, transparent 8%, rgba(123, 90, 255, 0.15) 22%, transparent 36%);
+  mix-blend-mode: screen;
+  animation: synapseSweep 8s ease-in-out infinite;
+}
+
+.brain-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  border: 1px solid rgba(117, 244, 255, 0.28);
+  box-shadow:
+    inset 0 0 20px rgba(0, 229, 255, 0.12),
+    inset 0 0 45px rgba(124, 77, 255, 0.12);
+}
+
+.status-pill {
+  position: relative;
+  overflow: hidden;
+}
+
+.status-pill::after {
+  content: "";
+  position: absolute;
+  top: -140%;
+  left: -40%;
+  width: 44%;
+  height: 380%;
+  transform: rotate(18deg);
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  animation: statusSweep 4.8s linear infinite;
+}
+
+@keyframes corticalPulse {
+  0%, 100% { transform: scale(0.98); opacity: 0.84; }
+  50% { transform: scale(1.02); opacity: 1; }
+}
+
+@keyframes synapseDrift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(18px, -26px, 0); }
+}
+
+@keyframes synapseSweep {
+  0%, 100% { opacity: 0.28; transform: translateX(-6%); }
+  50% { opacity: 0.62; transform: translateX(6%); }
+}
+
+@keyframes statusSweep {
+  from { left: -40%; }
+  to { left: 140%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brain-hero::before,
+  .brain-hero::after,
+  .brain-shell::before,
+  .status-pill::after,
+  .project-cosmos::after,
+  .project-stage::after {
+    animation: none;
+  }
+}
+
+.project-cosmos {
+  position: relative;
+  isolation: isolate;
+}
+
+.project-cosmos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(0, 229, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 86% 22%, rgba(124, 77, 255, 0.14), transparent 30%),
+    radial-gradient(circle at 55% 82%, rgba(24, 255, 255, 0.09), transparent 24%);
+  filter: blur(6px);
+}
+
+.project-cosmos::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, rgba(0, 229, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(124, 77, 255, 0.02) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: radial-gradient(circle at center, black 36%, transparent 95%);
+  animation: cosmosDrift 22s linear infinite;
+}
+
+.project-stage::after {
+  content: "";
+  position: absolute;
+  inset: 10% 0 auto;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(24, 255, 255, 0.3), transparent);
+  animation: stageScan 5.4s ease-in-out infinite;
+}
+
+@keyframes stageScan {
+  0%, 100% { opacity: 0.18; transform: translateY(0); }
+  50% { opacity: 0.6; transform: translateY(10px); }
+}
+
+@keyframes cosmosDrift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-20px, 14px, 0); }
+}
+
+.dna-cyan {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(0, 229, 255, 0.1), transparent 26%),
+    radial-gradient(circle at 78% 22%, rgba(24, 255, 255, 0.08), transparent 30%);
+}
+
+.dna-violet {
+  background:
+    radial-gradient(circle at 15% 22%, rgba(124, 77, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 82% 20%, rgba(149, 104, 255, 0.08), transparent 28%);
+}
+
+.dna-indigo {
+  background:
+    radial-gradient(circle at 16% 20%, rgba(111, 134, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(140, 160, 255, 0.09), transparent 30%);
+}
+
+.dna-teal {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(24, 255, 255, 0.1), transparent 24%),
+    radial-gradient(circle at 84% 24%, rgba(0, 200, 180, 0.1), transparent 30%);
+}
+
+.dna-pink {
+  background:
+    radial-gradient(circle at 14% 20%, rgba(255, 95, 158, 0.12), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(255, 141, 188, 0.1), transparent 30%);
+}
+
+.project-wipe {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.2), rgba(2, 6, 23, 0.85));
+  z-index: 2;
+}
+
+.project-sweep {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 36%;
+  height: 64%;
+  pointer-events: none;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  filter: blur(10px);
+  z-index: 1;
+}
+
+.media-light-card {
+  position: relative;
+}
+
+.media-light-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: screen;
+}

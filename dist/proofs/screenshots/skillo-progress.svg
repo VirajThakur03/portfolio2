@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <rect width="1200" height="640" fill="#072520"/>
+  <rect x="64" y="60" width="1072" height="520" rx="20" fill="#0f3a32" stroke="#66f7de"/>
+  <text x="96" y="124" font-family="Arial" font-size="40" fill="#defff8">Skillo Progress Dashboard</text>
+  <text x="96" y="176" font-family="Arial" font-size="24" fill="#b7f7ea">Current Track Completion: 68%</text>
+  <rect x="96" y="210" width="980" height="36" rx="10" fill="#1d5a4f"/>
+  <rect x="96" y="210" width="666" height="36" rx="10" fill="#78ffe8"/>
+  <text x="96" y="300" font-family="Arial" font-size="24" fill="#cffff4">Next Recommended Module: API Versioning</text>
+</svg>
