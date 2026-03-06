@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <rect width="1200" height="640" fill="#06231f"/>
+  <rect x="62" y="56" width="1076" height="528" rx="20" fill="#0b332d" stroke="#52f0d4"/>
+  <text x="96" y="120" font-family="Arial" font-size="40" fill="#dcfff7">Skillo Skill Graph</text>
+  <text x="96" y="174" font-family="Arial" font-size="24" fill="#b3f3e5">Python -> APIs -> Backend -> Deployment</text>
+  <circle cx="240" cy="340" r="56" fill="#0d4f45" stroke="#6bffe4"/>
+  <circle cx="460" cy="340" r="56" fill="#0d4f45" stroke="#6bffe4"/>
+  <circle cx="680" cy="340" r="56" fill="#0d4f45" stroke="#6bffe4"/>
+  <circle cx="900" cy="340" r="56" fill="#0d4f45" stroke="#6bffe4"/>
+  <path d="M296 340 L404 340 M516 340 L624 340 M736 340 L844 340" stroke="#94ffe8" stroke-width="6"/>
+</svg>

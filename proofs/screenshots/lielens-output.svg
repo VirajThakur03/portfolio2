@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <rect width="1200" height="640" fill="#061122"/>
+  <rect x="64" y="60" width="1072" height="520" rx="20" fill="#0b1f34" stroke="#33d9ff" stroke-opacity="0.55"/>
+  <text x="96" y="128" font-family="Arial" font-size="42" fill="#d3f8ff">LieLens Output</text>
+  <text x="96" y="178" font-family="Arial" font-size="28" fill="#9fefff">Risk Score: 0.81 (High)</text>
+  <text x="96" y="226" font-family="Arial" font-size="24" fill="#a8e9ff">Top Signals: hedging language, contradiction terms, manipulative cues</text>
+  <rect x="96" y="268" width="1008" height="40" rx="10" fill="#0d3148"/>
+  <rect x="96" y="268" width="816" height="40" rx="10" fill="#1ac7ff"/>
+  <text x="96" y="350" font-family="Arial" font-size="22" fill="#caeeff">Explanation confidence: 87%</text>
+</svg>

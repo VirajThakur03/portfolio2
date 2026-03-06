@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <rect width="1200" height="640" fill="#091a29"/>
+  <rect x="68" y="62" width="1064" height="516" rx="20" fill="#122e41" stroke="#5dd6ff"/>
+  <text x="100" y="126" font-family="Arial" font-size="40" fill="#dbf8ff">Django Routing Snapshot</text>
+  <text x="100" y="182" font-family="Arial" font-size="24" fill="#a8e9ff">/tracks -> /playlist/<id> -> /playlist/add/<song_id></text>
+  <rect x="100" y="220" width="964" height="320" rx="12" fill="#0e2433" stroke="#2f6e89"/>
+  <text x="126" y="286" font-family="Consolas" font-size="22" fill="#b7f0ff">path('playlist/&lt;int:id&gt;/', views.playlist_detail)</text>
+  <text x="126" y="326" font-family="Consolas" font-size="22" fill="#b7f0ff">path('playlist/add/&lt;int:song_id&gt;/', views.add_to_playlist)</text>
+</svg>
