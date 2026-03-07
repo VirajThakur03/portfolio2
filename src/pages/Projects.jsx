@@ -14,33 +14,33 @@ const featuredOrder = ["lielens", "resume-analyzer", "music-player", "skillo", "
 
 const mediaByProject = {
   lielens: [
-    { type: "image", label: "Analysis Output", src: `${import.meta.env.BASE_URL}project-media/lielens/lielens-analysis.png` },
-    { type: "image", label: "Risk Dashboard", src: `${import.meta.env.BASE_URL}project-media/lielens/lielens-dashboard.png` },
-    { type: "image", label: "Signup Flow", src: `${import.meta.env.BASE_URL}project-media/lielens/lielens-signup.png` },
-    { type: "video", label: "Live Demo", src: `${import.meta.env.BASE_URL}project-media/lielens/lielensproject.mp4` }
+    { type: "image", label: "Analysis Output", src: "/portfolio2/project-media/lielens/lielens-analysis.png" },
+    { type: "image", label: "Risk Dashboard", src: "/portfolio2/project-media/lielens/lielens-dashboard.png" },
+    { type: "image", label: "Signup Flow", src: "/portfolio2/project-media/lielens/lielens-signup.png" },
+    { type: "video", label: "Live Demo", src: "/portfolio2/project-media/lielens/lielensproject.mp4" }
   ],
   "resume-analyzer": [
-    { type: "image", label: "Portfolio Home View", src: `${import.meta.env.BASE_URL}project-media/resume-analyzer/resume-analyzer-home.png` },
-    { type: "image", label: "Signup Screen", src: `${import.meta.env.BASE_URL}project-media/resume-analyzer/resume-analyzer-signup.png` },
-    { type: "image", label: "Analyzer Report", src: `${import.meta.env.BASE_URL}project-media/resume-analyzer/resume-analyzer-report.png` },
-    { type: "video", label: "Live Demo", src: `${import.meta.env.BASE_URL}project-media/resume-analyzer/resumeanalyzerproject.mp4` }
+    { type: "image", label: "Portfolio Home View", src: "/portfolio2/project-media/resume-analyzer/resume-analyzer-home.png" },
+    { type: "image", label: "Signup Screen", src: "/portfolio2/project-media/resume-analyzer/resume-analyzer-signup.png" },
+    { type: "image", label: "Analyzer Report", src: "/portfolio2/project-media/resume-analyzer/resume-analyzer-report.png" },
+    { type: "video", label: "Live Demo", src: "/portfolio2/project-media/resume-analyzer/resumeanalyzerproject.mp4" }
   ],
   "music-player": [
-    { type: "image", label: "Now Playing Screen", src: `${import.meta.env.BASE_URL}project-media/music-player/music-player-main.png` },
-    { type: "image", label: "Song Selection View", src: `${import.meta.env.BASE_URL}project-media/music-player/music-player-dropdown.png` },
-    { type: "video", label: "Live Demo", src: `${import.meta.env.BASE_URL}project-media/music-player/musicplayerproject.mp4` }
+    { type: "image", label: "Now Playing Screen", src: "/portfolio2/project-media/music-player/music-player-main.png" },
+    { type: "image", label: "Song Selection View", src: "/portfolio2/project-media/music-player/music-player-dropdown.png" },
+    { type: "video", label: "Live Demo", src: "/portfolio2/project-media/music-player/musicplayerproject.mp4" }
   ],
   skillo: [
-    { type: "image", label: "Auth Screen", src: `${import.meta.env.BASE_URL}project-media/skillo/skillo-auth.png` },
-    { type: "image", label: "Marketplace View", src: `${import.meta.env.BASE_URL}project-media/skillo/skillo-marketplace.png` },
-    { type: "image", label: "Provider Dashboard", src: `${import.meta.env.BASE_URL}project-media/skillo/skillo-provider-dashboard.png` },
-    { type: "video", label: "Live Demo", src: `${import.meta.env.BASE_URL}project-media/skillo/skillo.mp4` }
+    { type: "image", label: "Auth Screen", src: "/portfolio2/project-media/skillo/skillo-auth.png" },
+    { type: "image", label: "Marketplace View", src: "/portfolio2/project-media/skillo/skillo-marketplace.png" },
+    { type: "image", label: "Provider Dashboard", src: "/portfolio2/project-media/skillo/skillo-provider-dashboard.png" },
+    { type: "video", label: "Live Demo", src: "/portfolio2/project-media/skillo/skillo.mp4" }
   ],
   "speech-emotion": [
-    { type: "image", label: "Audio Upload Screen", src: `${import.meta.env.BASE_URL}project-media/speech-emotion/speech-upload.png` },
-    { type: "image", label: "Prediction Result", src: `${import.meta.env.BASE_URL}project-media/speech-emotion/speech-result.png` },
-    { type: "image", label: "Record Audio Flow", src: `${import.meta.env.BASE_URL}project-media/speech-emotion/speech-record.png` },
-    { type: "video", label: "Live Demo", src: `${import.meta.env.BASE_URL}project-media/speech-emotion/speech.mp4` }
+    { type: "image", label: "Audio Upload Screen", src: "/portfolio2/project-media/speech-emotion/speech-upload.png" },
+    { type: "image", label: "Prediction Result", src: "/portfolio2/project-media/speech-emotion/speech-result.png" },
+    { type: "image", label: "Record Audio Flow", src: "/portfolio2/project-media/speech-emotion/speech-record.png" },
+    { type: "video", label: "Live Demo", src: "/portfolio2/project-media/speech-emotion/speech.mp4" }
   ]
 };
 
