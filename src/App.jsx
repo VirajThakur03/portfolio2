@@ -16,7 +16,7 @@ function App() {
             <NavLink to="/projects" className={navClass}>Projects</NavLink>
             <NavLink to="/about" className={navClass}>About</NavLink>
             <a
-              href="/resume.pdf"
+              href="/portfolio2/resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="rounded border border-cyan-400/40 px-3 py-1 text-sm uppercase tracking-wider text-cyan-200 hover:bg-cyan-500/15"

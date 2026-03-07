@@ -212,7 +212,7 @@ const Home = () => {
             Open To Roles
           </span>
           <a
-            href="/resume.pdf"
+            href="/portfolio2/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="status-pill rounded-full border border-violet-400/45 bg-violet-500/10 px-3 py-1 text-xs uppercase tracking-widest text-violet-100 hover:bg-violet-500/20"
@@ -241,7 +241,7 @@ const Home = () => {
               LinkedIn
             </a>
             <a
-              href="/resume.pdf"
+              href="/portfolio2/resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="rounded border border-violet-300/45 bg-violet-500/10 px-3 py-1 text-xs uppercase tracking-wider text-violet-100 hover:bg-violet-500/20"
