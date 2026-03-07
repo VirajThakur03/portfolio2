@@ -1,9 +1,0 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
-  <rect width="1200" height="640" fill="#210628"/>
-  <rect x="64" y="58" width="1072" height="524" rx="20" fill="#3a0f49" stroke="#f18fff"/>
-  <text x="96" y="124" font-family="Arial" font-size="40" fill="#ffe9ff">Emotion Inference Snapshot</text>
-  <text x="96" y="178" font-family="Arial" font-size="24" fill="#ffd8ff">Predicted Emotion: Calm | Confidence: 0.86</text>
-  <rect x="96" y="220" width="980" height="40" rx="10" fill="#4a1a5a"/>
-  <rect x="96" y="220" width="842" height="40" rx="10" fill="#ea8dff"/>
-  <text x="96" y="306" font-family="Arial" font-size="24" fill="#ffe2ff">Classes: Calm, Happy, Neutral, Sad, Angry</text>
-</svg>
