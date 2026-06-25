@@ -60,5 +60,5 @@ git push -u origin main
 - Resume is wired to `public/resume.pdf`.
 - Update profile links/stats in `src/data/nodes.js` if your public handles differ.
 - Real anatomical-style 3D brain model is available at `public/brain-anatomical.glb`.
-  Regenerate it with `npm run generate:brain-model`.
+- Regenerate it with `npm run generate:brain-model`.
 - Project proof pages and screenshots are in `public/proofs/`.
